@@ -1,0 +1,21 @@
+Info
+
+tutorial: https://www.youtube.com/watch?v=Elpu7CIuqjY&list=PLC3y8-rFHvwiWPS2RO3BKotLRfgg_8WEo&index=1
+
+github: https://github.com/radu-alin/react-diy-setup-2.git
+
+app: -
+
+github 
+…or create a new repository on the command line
+echo "# react-diy-setup-2" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/radu-alin/react-diy-setup-2.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/radu-alin/react-diy-setup-2.git
+git branch -M main
+git push -u origin main
