@@ -19,3 +19,47 @@ git push -u origin main
 git remote add origin https://github.com/radu-alin/react-diy-setup-2.git
 git branch -M main
 git push -u origin main
+
+----------------------------------------------------------------
+webpack
+At its core, webpack is a static module bundler for modern JavaScript applications. When webpack processes your application, it internally builds a dependency graph from one or more entry points and then combines every module your project needs into one or more bundles, which are static assets to serve your content from.
+
+webpack-cli
+webpack CLI provides a flexible set of commands for developers to increase speed when setting up a custom webpack project. As of webpack v4, webpack is not expecting a configuration file, but often developers want to create a more custom webpack configuration based on their use-cases and needs. webpack CLI addresses these needs by providing a set of tools to improve the setup of custom webpack configuration.
+
+webpack-dev-server
+webpack CLI provides a flexible set of commands for developers to increase speed when setting up a custom webpack project. As of webpack v4, webpack is not expecting a configuration file, but often developers want to create a more custom webpack configuration based on their use-cases and needs. webpack CLI addresses these needs by providing a set of tools to improve the setup of custom webpack configuration.
+----------------------------------------------------------------
+
+Loaders
+Webpack enables use of loaders to preprocess files. This allows you to bundle any static resource way beyond JavaScript. You can easily write your own loaders using Node.js.
+
+babel-loader
+- this package allows transpiling JavaScript files using Babel and webpack.
+
+----------------------------------------------------------------
+
+Plugins
+While loaders are used to transform certain types of modules, plugins can be leveraged to perform a wider range of tasks like bundle optimization, asset management and injection of environment variables.
+
+html-webpack-plugin
+The HtmlWebpackPlugin simplifies creation of HTML files to serve your webpack bundles. This is especially useful for webpack bundles that include a hash in the filename which changes every compilation. You can either let the plugin generate an HTML file for you, supply your own template using lodash templates, or use your own loader.
+
+----------------------------------------------------------------
+
+@babel/core
+Babel is a tool that helps you write code in the latest version of JavaScript. When your supported environments don't support certain features natively, Babel will help you compile those features down to a supported version.
+
+@babel/preset-env 
+- is a smart preset that allows you to use the latest JavaScript without needing to micromanage which syntax transforms (and optionally, browser polyfills) are needed by your target environment(s). 
+- this both makes your life easier and JavaScript bundles smaller!
+
+@babel/preset-react
+- babel will process react code, .jsx;
+- it includes the following plugins: @babel/plugin-syntax-jsx, @babel/plugin-transform-react-jsx, @babel/plugin-transform-react-display-name
+
+@babel/preset-typescript
+- this preset is recommended if you use TypeScript, a typed superset of JavaScript. 
+- it includes the following plugins: @babel/plugin-transform-typescript
+
+----------------------------------------------------------------
