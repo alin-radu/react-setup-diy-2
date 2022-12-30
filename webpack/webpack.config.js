@@ -17,6 +17,7 @@ module.exports = {
     extensions: ['.tsx', '.ts', '.js'],
   },
 
+  // modules
   module: {
     rules: [
       // loader, babel-loader for ts,tsx,js,jsx
@@ -29,10 +30,25 @@ module.exports = {
           },
         ],
       },
-      //
+      // loader, css-loader for css
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+      // loader, for ico|gif|png|jpg|jpeg
+      {
+        test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+        type: 'asset/resource',
+      },
+      // loader, for woff(2)?|eot|ttf|otf|svg
+      {
+        test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
+        type: 'asset/inline',
+      },
     ],
   },
 
+  // plugins
   plugins: [
     // plugin HtmlWebpackPlugin
     new HtmlWebpackPlugin({
