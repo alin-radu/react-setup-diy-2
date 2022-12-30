@@ -98,3 +98,12 @@ eslint-plugin-import
 - all the goodness that the ES2015+ static module syntax intends to provide, marked up in your editor;
 
 ----------------------------------------------------------------
+
+prettier
+
+eslint-config-prettier
+- turns off all rules that are unnecessary or might conflict with Prettier;
+
+
+eslint-plugin-prettier
+- runs Prettier as an ESLint rule and reports differences as individual ESLint issues;

@@ -20,6 +20,7 @@ module.exports = {
     'plugin:import/warnings',
     'plugin:import/typescript',
     'plugin:jsx-a11y/recommended',
+    'plugin:prettier/recommended',
   ],
   rules: {
     'no-unused-vars': 'off',
