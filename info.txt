@@ -51,6 +51,10 @@ While loaders are used to transform certain types of modules, plugins can be lev
 html-webpack-plugin
 The HtmlWebpackPlugin simplifies creation of HTML files to serve your webpack bundles. This is especially useful for webpack bundles that include a hash in the filename which changes every compilation. You can either let the plugin generate an HTML file for you, supply your own template using lodash templates, or use your own loader;
 
+@pmmmwh/react-refresh-webpack-plugin'
+- an EXPERIMENTAL Webpack plugin to enable "Fast Refresh" (also known as Hot Reloading) for React components;
+- this plugin is not 100% stable;
+- we're hoping to land a v1 release soon - please help us by reporting any issues you've encountered;
 ----------------------------------------------------------------
 
 @babel/core
@@ -67,5 +71,30 @@ Babel is a tool that helps you write code in the latest version of JavaScript. W
 @babel/preset-typescript
 - this preset is recommended if you use TypeScript, a typed superset of JavaScript. 
 - it includes the following plugins: @babel/plugin-transform-typescript
+
+----------------------------------------------------------------
+
+eslint
+
+eslint-plugin-react
+- rules when working with react;
+
+eslint-plugin-react-hooks
+- rules for react hooks;
+
+@typescript-eslint/parser
+- allows TS code to be linted;
+
+@typescript-eslint/eslint-plugin
+- eslint rules that are TS specific;
+
+eslint-plugin-jsx-a11y
+- this plugin does a static evaluation of the JSX to spot accessibility issues in React apps;
+- because it only catches errors in static code, use it in combination with @axe-core/react to test the accessibility of the rendered DOM;
+- consider these tools just as one step of a larger a11y testing process and always test your apps with assistive technology;
+
+eslint-plugin-import
+- this plugin intends to support linting of ES2015+ (ES6+) import/export syntax, and prevent issues with misspelling of file paths and import names;
+- all the goodness that the ES2015+ static module syntax intends to provide, marked up in your editor;
 
 ----------------------------------------------------------------
